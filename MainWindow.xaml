@@ -1,0 +1,16 @@
+﻿<Window x:Class="FecSubmitter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FecSubmitter"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="lblFecFilePath" Content="" HorizontalAlignment="Left" Margin="91,60,0,0" VerticalAlignment="Top" Width="699"/>
+        <Button x:Name="btnSelectFecFile" Content="Select .fec file" HorizontalAlignment="Left" Margin="10,63,0,0" VerticalAlignment="Top" Click="btnSelectFecFile_Click"/>
+        <Label Content="Submit a .fec file to the FEC" HorizontalAlignment="Left" Height="39" Margin="10,10,0,0" VerticalAlignment="Top" Width="553" FontSize="24"/>
+        <Button x:Name="btnSubmitFecFile" Content="Transmit to FEC" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top" Width="158" Click="btnSubmitFecFile_Click"/>
+
+    </Grid>
+</Window>
