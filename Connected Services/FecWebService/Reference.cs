@@ -232,6 +232,7 @@ namespace FecWebService
                 result.MaxReceivedMessageSize = int.MaxValue;
                 result.AllowCookies = true;
                 result.Security.Mode = System.ServiceModel.BasicHttpSecurityMode.Transport;
+                result.SendTimeout = new System.TimeSpan(0, 10, 0);
                 return result;
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
